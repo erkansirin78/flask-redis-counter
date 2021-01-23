@@ -1,0 +1,9 @@
+---
+services:
+  redis:
+    image: redis
+  web:
+    build: "."
+    ports:
+      - "5000:5000"
+version: "3"
